@@ -1,5 +1,12 @@
- language: node_js
- node_js:
-   - "0.10"
-   - "0.8"
-   - "0.6"
+language: node_js
+node_js:
+- '0.10'
+- '0.8'
+- '0.6'
+deploy:
+  provider: heroku
+  api_key:
+    secure: b8nNJv6Uw30xQVsi+CVI2yd3eif+hnjzuGEMFKN7Btjdaxi6Tj3Hs/M5iDMF8cjqKfVBEVrObNAMBP+i77l9LJcrZO+Bs/mspQzyEXBkBuqW+8cam4D8hzZ1NQUV5I3W8i0GBpCve7Ccne3AhwtKjhRuAPqGVIDi2gHkmoVS6Dk=
+  app: singlepage-io
+  on:
+    repo: olivierlesnicki/singlepage.io
