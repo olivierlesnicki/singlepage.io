@@ -1,0 +1,27 @@
+{
+  "name": "singlepage.io",
+  "version": "0.0.0",
+  "description": "A single page application hosting service powered by Node.js.",
+  "homepage": "https://github.com/olivierlesnicki/singlepage.io",
+  "author": "Olivier Lesnicki <olivier.lesnicki@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "ractive": "~0.4.0",
+    "backbone": "~1.1.2",
+    "underscore": "~1.6.0",
+    "requirejs": "~2.1.14",
+    "less": "~1.7.3",
+    "text": "~2.0.12",
+    "fastclick": "~1.0.2"
+  }
+}
