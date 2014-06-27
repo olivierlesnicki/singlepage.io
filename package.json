@@ -1,27 +1,27 @@
 {
-  "name": "singlepage.io",
-  "version": "0.0.0",
-  "description": "A single page application hosting service powered by Node.js.",
-  "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/olivierlesnicki/singlepage.io.git"
-  },
-  "author": "Olivier Lesnicki <olivier.lesnicki@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/olivierlesnicki/singlepage.io/issues"
-  },
-  "homepage": "https://github.com/olivierlesnicki/singlepage.io",
-  "dependencies": {
-    "lodash": "^2.4.1",
-    "parse": "^1.2.17",
-    "express": "^4.4.4"
-  },
-  "devDependencies": {
-    "mocha": "^1.20.1"
-  }
+    "name": "singlepage.io",
+    "version": "0.0.0",
+    "description": "A single page application hosting service powered by Node.js.",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/mocha/bin/mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/olivierlesnicki/singlepage.io.git"
+    },
+    "author": "Olivier Lesnicki <olivier.lesnicki@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/olivierlesnicki/singlepage.io/issues"
+    },
+    "homepage": "https://github.com/olivierlesnicki/singlepage.io",
+    "dependencies": {
+        "lodash": "^2.4.1",
+        "parse": "^1.2.17",
+        "express": "^4.4.4"
+    },
+    "devDependencies": {
+        "mocha": "^1.20.1"
+    }
 }
