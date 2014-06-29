@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var router = express.Router();
+var subdomainRouter = require('./lib/router/subdomain');
 var domainRouter = require('./lib/router/domain');
 var userRouter = require('./lib/router/user');
 
@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', router);
+app.use('/', subdomainRouter);
 app.use('/domain', domainRouter);
 app.use('/user', userRouter);
 
