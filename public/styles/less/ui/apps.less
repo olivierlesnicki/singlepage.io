@@ -1,0 +1,94 @@
+.apps-ui {
+    .apps-header {
+        height: 94px;
+        line-height: 94px;
+        text-transform: uppercase;
+        .gotham;
+        a {
+            color: #a7a7a7;
+            &:hover {
+                text-decoration: none;
+                color: #333333;
+            }
+        }
+    }
+    .create-app-modal-close-button {
+        background: none;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        color: #fff;
+        height: 44px;
+        width: 44px;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 36px;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    }
+    .create-app-modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(57, 57, 57, .95);
+        color: #fff;
+            -webkit-transform-origin: bottom center;
+            -moz-transform-origin: bottom center;
+            -o-transform-origin: bottom center;
+            transform-origin: bottom center;
+            -webkit-animation: scale-fade 300ms forwards;
+            -moz-animation: scale-fade 300ms forwards;
+            -ms-animation: scale-fade 300ms forwards;
+            -o-animation: scale-fade 300ms forwards;
+            animation: scale-fade 300ms forwards;
+    }
+    .create-app-modal-content {
+        text-align: center;
+        .absolute-center;
+        width: 100%;
+    }
+    .create-app-modal-form {
+        background: rgba(0, 0, 0, .2);
+        margin: 0 auto;
+        height: 44px;
+        width: 432px;
+        margin: 0 auto;
+        border-radius: 22px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .create-app-modal-form-prefix, .create-app-modal-form-suffix, .create-app-modal-form-input {
+        float: left;
+        height: 44px;
+        color: rgba(255, 255, 255, .6);
+        line-height: 24px;
+        padding: 10px 20px;
+    }
+    .create-app-modal-form-input {
+        background: none;
+        color: #35BECD;
+        border-left: 0;
+        border-right: 0;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        padding: 10px 0;
+        width: 200px;
+        &::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, .2);
+        }
+        &:-moz-placeholder {
+            color: rgba(255, 255, 255, .2);
+        }
+        &::-moz-placeholder {
+            color: rgba(255, 255, 255, .2);
+        }
+        &:-ms-input-placeholder {
+            color: rgba(255, 255, 255, .2);
+        }
+    }
+}

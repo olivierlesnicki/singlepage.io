@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <h1>SINGLEPAGE.IO</h1>
+        </div>
+        <div class="col-xs-6">
+            <ul class="pull-right list-inline">
+                {{^isUserSignedIn}}
+                <li>
+                    <button class="btn btn-default">Getting Started</button>
+                </li>
+                <li>
+                    <button class="btn btn-default">Pricing</button>
+                </li>
+                <li>
+                    <button class="btn btn-default" on-click="signIn">Sign In</button>
+                </li>
+                {{/isUserSignedIn}} {{#isUserSignedIn}}
+                <li>
+                    <button class="btn btn-default" on-click="signOut">Logout</button>
+                </li>
+                {{/isUserSignedIn}}
+            </ul>
+        </div>
+    </div>
+</div>

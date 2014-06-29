@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head></head>
+
+<body>
+    <script src="//www.parsecdn.com/js/parse-1.2.18.js"></script>
+    <script>
+    Parse.initialize("vVyFBUcliIutb2n2kL39LgGksBOpGRTL4mvJ2QEk", "ESb61ABdzcLALDWxIcKnTf1nb5ofm8t98a4fgg87");
+    Parse.User
+        .become('{{sessionToken}}')
+        .then(function(user) {
+                window.location.href = '/';
+            },
+            function(error) {
+                alert('Login with Dropbox Failed.');
+                window.location.href = '/';
+            });
+    </script>
+</body>
+
+</html>

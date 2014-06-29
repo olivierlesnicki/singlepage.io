@@ -1,0 +1,36 @@
+<div class="container apps-header">
+    <div class="row">
+        <div class="col-xs-6">
+            <ul class="list-inline">
+                <li>Apps</li>
+            </ul>
+        </div>
+        <div class="col-xs-6">
+            <ul class="list-inline pull-right">
+                <li>
+                    <a href="#" on-click="openCreateAppModal">Create New App</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{{#isCreateAppModalOpened}}
+<div class="create-app-modal">
+    <button class="create-app-modal-close-button" on-click="closeCreateAppModal">&#10005;</button>
+    <div class="create-app-modal-content">
+        <div class="create-app-modal-form">
+            <div class="create-app-modal-form-prefix">
+                http://
+            </div>
+            <input class="create-app-modal-form-input" type="text" placeholder="Enter your app name" />
+            <div class="create-app-modal-form-suffix">
+                .singlepage.io
+            </div>
+        </div>
+        <button class="btn btn-primary">
+            Create New App
+        </button>
+    </div>
+</div>
+{{/isCreateAppModalOpened}}

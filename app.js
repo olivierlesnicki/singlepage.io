@@ -7,8 +7,16 @@ var bodyParser = require('body-parser');
 
 var router = express.Router();
 var domainRouter = require('./lib/router/domain');
+var userRouter = require('./lib/router/user');
 
 var app = express();
+
+// engine
+app.engine('html', require('hogan-express'));
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'html');
 
 app.use(favicon());
 app.use(logger('dev'));
@@ -19,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', router);
 app.use('/domain', domainRouter);
+app.use('/user', userRouter);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
@@ -33,6 +42,7 @@ app.use(function(req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
     app.use(function(err, req, res, next) {
+        console.log(err);
         res.status(err.status || 500);
         res.render('error', {
             message: err.message,
